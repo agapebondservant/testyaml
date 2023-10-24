@@ -2,13 +2,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: Workflow
 metadata:
   name: hello-world
-  labels:
-    workflows.argoproj.io/archive-strategy: "false"
   annotations:
     kapp.k14s.io/versioned: ""
-    kapp.k14s.io/num-versions: "1"
     kapp.k14s.io/disable-wait: ""
-    kapp.k14s.io/update-strategy: always-replace
 spec:
   entrypoint: whalesay
   templates:
