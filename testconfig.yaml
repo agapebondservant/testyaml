@@ -4,5 +4,6 @@ metadata:
   name: testconfig
   annotations:
     kapp.k14s.io/versioned: ""
+    kapp.k14s.io/disable-wait: ""
 data:
   special.field: hello world
